@@ -55,7 +55,7 @@ export function App() {
             </a>
           )}
           <h1 className={css({ fontSize: "2xl", fontWeight: "bold" })}>
-            {page === "scan" ? "シリアルまとめ" : "ブックマークレット"}
+            {page === "scan" ? "シリアルスキャナー" : "ブックマークレット"}
           </h1>
         </div>
         <PrivacyNote />
