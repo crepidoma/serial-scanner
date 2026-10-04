@@ -1,0 +1,18 @@
+{
+  // 文字認識のWeb Worker。画素を添字で回す処理が多く、noUncheckedIndexedAccess だと
+  // 型の絞り込みだけのコードが増えて読みにくくなるため、ここでは外す。
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.worker.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023", "WebWorker"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "composite": true,
+    "skipLibCheck": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src/ocr", "src/shared", "src/vite-env.d.ts"]
+}

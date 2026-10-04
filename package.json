@@ -1,0 +1,43 @@
+{
+  "name": "serial-scanner",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "lint": "biome check . && node scripts/sync-skills.ts --check",
+    "format": "biome check --write .",
+    "skills:sync": "node scripts/sync-skills.ts",
+    "eval:ocr": "node scripts/eval-ocr.ts"
+  },
+  "dependencies": {
+    "onnxruntime-web": "^1.30.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@pandacss/dev": "^1.12.1",
+    "@pandacss/preset-base": "^1.12.1",
+    "@pandacss/preset-panda": "^1.12.1",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "onnxruntime-node": "^1.30.0",
+    "playwright": "^1.63.0",
+    "sharp": "^0.35.5",
+    "terser": "^5.51.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
+}

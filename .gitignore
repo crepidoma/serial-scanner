@@ -1,0 +1,15 @@
+# 依存と生成物
+/node_modules/
+/dist/
+/styled-system/
+/coverage/
+/test-results/
+
+# 手元だけの資料（実物のシリアルが写った写真など）
+/.local/
+
+# エディタ・OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
